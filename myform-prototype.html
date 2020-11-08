@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    //atur notif hasil dan error pada sellect
+    $(document).ready(function () {
+      $('.error').hide();
+      $('option:odd').addClass('pilihan');
+      $('.klik').click(function (event) {
+        var selectedopts = "";
+        var count = $('select option:selected').val();
+        if (count == 0) {
+          $('p.result').hide();
+          $('.error').show();
+        }
+        else {
+          $('select option:selected').each(function () {
+            selectedopts += $(this).text() + ",";
+          });
+          $('.error').hide();
+          $('p.result').show();
+          $('p.result').text('You have selected ' + selectedopts);
+        }
+        event.preventDefault();
+      });
+
+
+      //atur efek klik botton submit
+      $(".klik").mousedown(function () {
+
+
+        var mrgtb = parseInt($(this).css("margin-top"));
+        var mrglf = parseInt($(this).css("margin-left"));
+
+        mrgtb = mrgtb + 1;
+        mrglf = mrglf + 1;
+
+        $(this).css("margin-top", mrgtb + "px").css("margin-left", mrglf + "px");
+
+
+      }).mouseup(function () {
+
+        var mrgtb = parseInt($(this).css("margin-top"));
+        var mrglf = parseInt($(this).css("margin-left"));
+
+        mrgtb = mrgtb - 1;
+        mrglf = mrglf - 1;
+
+        $(this).css("margin-top", mrgtb + "px").css("margin-left", mrglf + "px");
+
+      });
+
+      //atur hover bottom
+      $('.berubah').hover(
+        function () {
+          $(this).css('opacity', '.2');
+        },
+        function () {
+          $(this).css('opacity', '1');
+        }
+      );
+    });
+
+  </script>
+
+  <style>
+    .error {
+      color: red;
+      padding-left: 10px;
+    }
+
+    .pilihan {
+      background-color: rgb(46, 39, 83);
+      color: blanchedalmond;
+    }
+
+    option {
+      background: rgb(63, 62, 134);
+      color: blanchedalmond;
+    }
+
+    .awal {
+      transform: translateY(-50%);
+      opacity: 1;
+      transition: opacity .1s linear;
+    }
+
+    .akhir {
+      transition: opacity .1s linear;
+
+    }
+
+    .tombol :hover .awal {
+      opacity: 0
+    }
+
+    .tombol:hover .akhir {
+      opacity: 1
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-group" style="width: 50%;">
+      <label for="exampleFormControlSelect1">Select the Food Item</label>
+      <select class="form-control" id="exampleFormControlSelect1" multiple style=" background-color: rgb(46, 39, 83);">
+        <option value="0">Select a Food</option>
+        <option value="Pizza $5">Pizza $5</option>
+        <option value="HotDog $2">HotDog $2</option>
+        <option value="Coke $1">Coke $1</option>
+        <option value="French Fries $3">French Fries $3</option>
+      </select>
+      <p class="error">You have not selected any Option</p>
+      <p class="result"></p>
+    </div>
+    <div class="tombol">
+      <input id="a" class="klik berubah awal" style="outline: none;" type="image" src="pic/botton1.png" width="100px"
+        border="0">
+      <input id="a" class="klik berubah akhir" style="outline: none;" type="image" src="pic/botton2.png" width="100px"
+        border="0">
+    </div>
+  </div>
+
+</body>
+
+</html>
