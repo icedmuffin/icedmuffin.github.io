@@ -1,56 +1,97 @@
 <!DOCTYPE html>
-<html>
-  <title>CINEMA 21 - We Are The Largest Cinema Chain In Indonesia - CINEMA 21</title>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-</style>
-<style>
-    .button {
-      border: none;
-      color: white;
-      padding: 10px 24px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-    }
-    
-    .buttonA {background-color: rgb(223, 119, 87)}
-    </style>
-<body class="w3-light-grey w3-content" style="max-width:1600px">
+<html lang="en">
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
-  <div class="w3-container">
-    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
-      <i class="fa fa-remove"></i>
-    </a>
-    <img src="https://21cineplex.com//theme/v5/assets/img/logo.png" style="width:45%;" class="w3-round"><br><br>
-    <h4><b>21 Cineplex</b></h4>
-  </div>
-  <div class="w3-bar-block">
-    <a href="aboutus.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>aboutUs</a> 
-    <a href="contactus.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>contactUs</a>
-  </div>
+<head>
+	<!-- ganti sesuai judul kalian -->
+	<title>Mid Semester Project</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-</nav>
+	<!-- kalau punya css external masukin sini -->
+	<style>
+		a.biru {
+			color: rgb(53, 53, 91);
+		}
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+		nav.navbar {
+			background-color: rgb(240, 240, 240);
+		}
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:300px">
+		button.btn {
+			margin: 1%;
+		}
 
-  <!-- Header -->
-  <header id="portfolio">
-    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+		button.btn-dark {
+			background: rgb(53, 53, 91);
+
+		}
+	</style>
+
+
+	<!-- kalau punya script masukin sini -->
+	<script>
+
+	</script>
+	</style>
+	<style>
+		.button {
+		  border: none;
+		  color: white;
+		  padding: 10px 24px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		  cursor: pointer;
+		}
+		
+		.buttonA {background-color: rgb(223, 119, 87)}
+		</style>
+</head>
+
+<body>
+
+	<!-- kotak awal -->
+	<div class="container-fluid">
+
+		<!-- kotak header -->
+		<!-- yang ini gak usah di ubah2 klo ada update tinggal copas ajah-->
+
+		<div class="container-fluid" style="padding: 0%; margin: 0%;">
+			<!-- tag universal -->
+			<img class="img-fluid" src="pic/header.png">
+
+		</div>
+		<div class="container-fluid" style="padding: 0%; margin: 0%;">
+			<nav class="navbar navbar-expand-sm" style="margin-bottom : 10px; ">
+
+				<ul class="navbar-nav">
+
+					<li class="nav-item">
+						<a class="nav-link biru" href="ourproduct.html">Our Products</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link biru" href="aboutus.html">About Us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link oren biru" href="contactus.html">Contact us</a>
+					</li>
+
+				</ul>
+			</nav>
+
+		</div>
+		
+		<!-- kotak konten -->
+		<div class="container-fluid">
+
+			<!-- kode kalian masukin sini -->
+			<span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
     <div class="w3-container">
         <div id="logo">
             <img src="https://21cineplex.com//theme/v5/assets/img/logo.png" alt="21 Cineplex Logo">
@@ -65,11 +106,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
             </select>
         </div>
     </div>
-
-  </header>
-  
-  <!-- First Photo Grid-->
-  <div class="w3-row-padding">
+<!-- First Photo Grid-->
+<div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
       <img src="https://media.21cineplex.com/webcontent/gallery/pictures/160465632064289_290x426.jpg" alt="Kursk" style="width:100%" class="w3-hover-opacity">
       <div class="movie-desc">
@@ -145,50 +183,25 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     </div>
   </div>
 
-  
 
-  
-  <!-- Contact Section -->
-  <div class="w3-container w3-padding-large w3-grey">
-    <h4 id="contact"><b>21 Cineplex</b></h4>
-    
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-32 w3-dark-grey">
-  <div class="w3-row-padding">
-    <div class="w3-third">
-      <h3>CINEMA21</h3>
-      <p>21 Cineplex Official Site - The Official Indonesia Cinema 21 Movies Site featuring complete showtimes of all theaters in Indonesia.</p>
-    </div>
-  
-    
+			<div class="jumbotron">
+				<p style="text-align: center;">
+					halaman ini di kerjakan oleh<br>
+					nama : Zahrin Nurshofia Wardhani<br>
+					nrp : 05211940000108<br>
 
-    <div class="w3-third">
-      <h4>POPULAR TAGS</h4>
-      <p>
-        <span class="w3-tag w3-black w3-margin-bottom">Movie</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Indonesia</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Jakarta</span>
-        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Balikpapan</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Bandung</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Surabaya</span>
-        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Palembang</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Happy Time</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Keluarga</span>
-      </p>
-    </div>
+			</div>
+		</div>
 
-  </div>
-  </footer>
+		<!-- kotak footer -->
+		<!-- yang ini gak usah di ubah2 klo ada update tinggal copas ajah-->
+		<div class="container-fluid">
+			<img class="img-fluid" src="pic/footer.png" style="padding: 0%; margin: 0%;">
+		</div>
+		
 
-<!-- End page content -->
-</div>
-
-<script>
-// Script to open and close sidebar
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-</script>
+	</div>
 
 </body>
+
 </html>
