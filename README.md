@@ -1,4 +1,2 @@
-# pwebd
-tugas PWEB kelas D
-oleh Naufal S. A. Sunandar
-nrp : 05211940000104
+# projectMid
+kelompok 11 project mid semester kelas D
