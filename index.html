@@ -2,105 +2,183 @@
 <html lang="en">
 
 <head>
-	<!-- ganti sesuai judul kalian -->
-	<title>Mid Semester Project</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="css/editan.css">
 
-	<!-- kalau punya css external masukin sini -->
-	<style>
-		a.biru {
-			color: rgb(53, 53, 91);
-		}
-
-		nav.navbar {
-			background-color: rgb(240, 240, 240);
-		}
-
-		button.btn {
-			margin: 1%;
-		}
-
-		button.btn-dark {
-			background: rgb(53, 53, 91);
-
-		}
-	</style>
+    <!-- Meta -->
 
 
-	<!-- kalau punya script masukin sini -->
-	<script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog Site Template">
+    <meta name="author" content="https://www.instagram.com/naufal_sunandar/">
+    <!-- <link rel="shortcut icon" href="images/logo.png"> -->
+    <title>Hakli template</title>
 
-	</script>
+    <!-- reset CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <!-- Boostrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Costom CSS -->
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/ex.css">
+
+    <!-- Costom font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
 
-	<!-- kotak awal -->
-	<div class="container-fluid">
+    <!-- ex -->
+    <nav class="menubar">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <div class="dropdown">
+            <a href="#">Keprofesian</a>
+            <div class="kotak-dropdown">
+                <section class="kanan">
+                    <h3>Keanggotaaan</h3>
+                    <a href="#">Registrasi Keanggotaan</a>
+                    <a href="#">Daftar Keanggotaan</a>
+                    <a href="#">STR</a>
+                    <h3>Agenda</h3>
+                    <a href="#">Agenda Akan Dilakukan</a>
+                    <a href="#">Agenda Telah Dilakukan</a>
+                    <h3>Dokumen</h3>
+                    <a href="#">Arsip Dokumen</a>
+                </section>
+                <section class="kiri">
 
-		<!-- kotak header -->
-		<!-- yang ini gak usah di ubah2 klo ada update tinggal copas ajah-->
+                </section>
 
-		<div class="container-fluid" style="padding: 0%; margin: 0%;">
-			<!-- tag universal -->
-			<img class="img-fluid" src="pic/header.png">
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Kemitraan Unicef</a>
+            <div class="kotak-dropdown">
+                <section class="kanan">
+                    <h3>Program</h3>
+                    <a href="#">Imunisasi</a>
+                    <a href="#">malaria</a>
+                    <a href="#">Wash</a>
+                    <a href="#">Covid-19</a>
+                </section>
+                <section class="kiri">
 
-		</div>
-		<div class="container-fluid" style="padding: 0%; margin: 0%;">
-			<nav class="navbar navbar-expand-sm" style="margin-bottom : 10px; ">
+                </section>
 
-				<ul class="navbar-nav">
-
-					<li class="nav-item">
-						<a class="nav-link biru" href="ourProduct.html">Our Products</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link biru" href="form.html">Form dan validasi</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link biru" href="aboutUs.html">About Us</a>
-					</li>
+            </div>
+        </div>
 
 
-				</ul>
-			</nav>
+        <a href="#">Contact Us</a>
+    </nav>
 
-		</div>
+    <!-- ex -->
+    <header class="container-fluid header">
+        <nav class="container navbar">
+            ini navigasi bar
+        </nav>
+    </header>
 
-		<!-- kotak konten -->
-		<div class="container-fluid">
+    <main class="container-fluid main">
 
-			<!-- kode kalian masukin sini -->
+        <!-- di bawah adalah space Dynamic -->
+        <section class="container-fluid keprofesian">
+            <h2>
+                Keproforesian
+            </h2>
+            <p>
+                ini tempat keprofesian
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta placeat, quia consequuntur, unde
+                veritatis vel mollitia quisquam sapiente quo sed soluta nemo! Debitis fugit facilis error? Esse ab
+                excepturi dolores!
+            </p>
+        </section>
 
-			<div class="jumbotron">
-				<p style="text-align: center;">
-					berikut adalah konten dari web kelompok ini<br><br>
-					<a class="btn btn-dark " href="ourProduct.html">Our Products</a><br><br>
-					<a class="btn btn-dark " href="form.html">Form dan validasi</a><br><br>
-					<a class="btn btn-dark " href="aboutUs.html">About Us dan Contact Us</a>
-					<br><br>
-					note : nama dari mahasiswa yang mengerjakan bisa di lihat di bagian baling bawah webpage.
-				</p>
+        <!-- di atas adalah space Dynamic -->
+        <section class="container-fluid unicef">
+            <h2>
+                Program Kemitraan Unicef
+            </h2>
+            <p>
+                ini tempat unicef
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta placeat, quia consequuntur, unde
+                veritatis vel mollitia quisquam sapiente quo sed soluta nemo! Debitis fugit facilis error? Esse ab
+                excepturi dolores!
+            </p>
+        </section>
 
-				<p>
+        <!-- di bawah adalah space Dynamic  -->
+        <section class="container-fluid agenda">
+            <h2>
+                Agenda
+            </h2>
+            <p>
+                ini tempat agenda
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta placeat, quia consequuntur, unde
+                veritatis vel mollitia quisquam sapiente quo sed soluta nemo! Debitis fugit facilis error? Esse ab
+                excepturi dolores!
+            </p>
+        </section>
+        <section class="container-fluid berita">
+            <H2>
+                Berita Hari Ini
+            </H2>
+            <p>
+                ini tempat berita
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta placeat, quia consequuntur, unde
+                veritatis vel mollitia quisquam sapiente quo sed soluta nemo! Debitis fugit facilis error? Esse ab
+                excepturi dolores!
+            </p>
 
-				</p>
-			</div>
-		</div>
+        </section>
+        <!-- di atas adalah space Dynamic -->
+    </main>
 
-		<!-- kotak footer -->
-		<!-- yang ini gak usah di ubah2 klo ada update tinggal copas ajah-->
-		<div class="container-fluid">
-			<img class="img-fluid" src="pic/footer.png" style="padding: 0%; margin: 0%;">
-		</div>
+    <footer class="container-fluid footer">
+        <section class="informasi">
+            <section class="span navigation">
+                <p>
+                    ini tempat navigasi footer
+                </p>
+            </section>
+            <section class="span logo">
+                <p>
+                    ini tempat logo hakli
+                </p>
+            </section>
+        </section>
+        <section class="container-fluid copyright">
+            <p>
+                ini tempat copytight
+            </p>
 
-	</div>
+        </section>
+
+    </footer>
+
+    <!-- Boostrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+        crossorigin="anonymous"></script>
 
 </body>
 
