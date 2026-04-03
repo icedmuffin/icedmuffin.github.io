@@ -55,8 +55,13 @@
         <label class="form-label">Date :</label>
         <input id="date" type="date">
       </div>
+      <div class="mb-2">
+        <label class="form-label">Available PSU Ports :</label>
+        <textarea id="psu" class="form-control" rows="2"
+          placeholder="e.g. PDU-A: 3 ports free, PDU-B: 1 port free"></textarea>
+      </div>
       <div class="actions">
-        <button id="exportBtn" class="btn btn-primary">Export PDF</button>
+        <button id="exportBtn" class="btn btn-primary w-100">Export PDF</button>
       </div>
       </p>
     </div>
@@ -72,7 +77,7 @@
       <tbody id="rack-body"></tbody>
     </table>
 
-    <div class="text-center">Copyright Naufal Sunandar</div>
+    <div class="text-center">&copy;Copyright Naufal Sunandar</div>
   </div>
 
   <!-- Hidden print area (used only for PDF) -->
@@ -98,14 +103,18 @@
       const site = document.getElementById("site").value || "-";
       const rack = document.getElementById("rack").value || "-";
       const date = document.getElementById("date").value || "-";
+      const psu = document.getElementById("psu").value || "-";
 
       const rows = document.querySelectorAll("#rack-body tr");
 
       let content = `
+      
       <h2>Rack Survey Report</h2>
       <p><strong>Site:</strong> ${site}</p>
       <p><strong>Rack:</strong> ${rack}</p>
       <p><strong>Date:</strong> ${date}</p>
+      <p><strong>Available PSU Ports :</strong> ${psu}</p>
+      
       <table border="1" cellspacing="0" cellpadding="6" style="width:100%; border-collapse: collapse;">
         <tr>
           <th>U</th>
