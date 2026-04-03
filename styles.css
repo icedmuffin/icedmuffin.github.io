@@ -1,5 +1,3 @@
-
-
 body {
   font-family: Arial, sans-serif;
   background: #f4f6f8;
@@ -9,12 +7,11 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 18px;
   margin-bottom: 10px;
 }
 
 .container {
-  max-width: 420px;
+  max-width: 600px;
   margin: auto;
 }
 
@@ -25,23 +22,9 @@ h1 {
   margin-bottom: 12px;
 }
 
-.actions {
-  margin-bottom: 10px;
-}
-
-button {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 8px;
-  background: #007bff;
-  color: white;
-  font-size: 14px;
-}
 
 input {
   padding: 10px;
-  font-size: 14px;
   border-radius: 8px;
   border: 1px solid #ccc;
   width: 100%;
@@ -50,85 +33,42 @@ input {
 
 table {
   width: 100%;
-  border-collapse: collapse;
-  background: white;
-  table-layout: fixed;
-  border-radius: 10px;
-  overflow: hidden;
+  
 }
 
 /* Make device column wider */
-th:nth-child(1), td:nth-child(1),
-th:nth-child(3), td:nth-child(3) {
-  width: 40px;
-}
-
-th:nth-child(2), td:nth-child(2) {
+th:nth-child(2),
+td:nth-child(2) {
   width: auto;
+  text-align: center;
 }
 
-th, td {
-  border: 1px solid #ddd;
-  padding: 4px;
-  text-align: center;
-  vertical-align: middle;
-}
 
 th {
   position: sticky;
   top: 0;
-  background: #ffffff;
-  z-index: 2;
-  font-size: 13px;
+  /* z-index: 2; */
+  text-align: center;
+
 }
 
 .u-number {
   background: #eef1f4;
   font-weight: bold;
   width: 20px;
-  font-size: 9px;
+
   position: sticky;
   left: 0;
   z-index: 1;
   padding: 1px;
 }
 
-td:last-child {
-  position: sticky;
-  right: 0;
-  background: #eef1f4;
-  font-weight: bold;
-  font-size: 9px;
-  width: 20px;
-  padding: 1px;
-}
 
 textarea {
   width: 100%;
   min-height: 36px;
   resize: vertical;
   border: none;
-  text-align: left;
-  font-size: 13px;
-  padding: 6px;
+  text-align: center;
   box-sizing: border-box;
-}
-
-textarea:focus {
-  outline: none;
-  background: #f1faff;
-}
-
-.hint {
-  font-size: 11px;
-  color: #666;
-  text-align: center;
-  margin-top: 6px;
-}
-
-.footer {
-  text-align: center;
-  font-size: 11px;
-  color: #999;
-  margin-top: 10px;
 }
